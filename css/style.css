@@ -1,0 +1,211 @@
+*, *:before, *:after {
+
+      -webkit-box-sizing: border-box !important;
+      -moz-box-sizing: border-box !important;
+      -ms-box-sizing: border-box !important;
+      box-sizing: border-box !important;
+    }
+    select {
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      -ms-appearance:none;
+      appearance:none;
+      outline:0;
+      box-shadow:none;
+      border:0!important;
+      background: #007940;
+      background-image: none;
+      flex: 1;
+      padding: 0 .5em;
+      color:#fff;
+      cursor:pointer;
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
+      border-color: black;
+   }
+   select::-ms-expand {
+      display: none;
+   }
+   .select {
+      position: relative;
+      display: flex;
+      width: 20em;
+      height: 3em;
+      line-height: 3;
+      background: #01793E;
+      overflow: hidden;
+      border-radius: .25em;
+      border-color: black;
+   }
+   .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 1em;
+      background: #007940;
+      cursor:pointer;
+      pointer-events:none;
+      transition:.25s all ease;
+      border-color: black;
+   }
+   .select:hover::after {
+      color: #23b499;
+   }
+    .links-nav{
+      display: flex;
+      background: #929289;
+      color:rgb(0, 0, 0);
+      padding: 10px 30px;
+      text-decoration: none;
+    }
+    nav{
+      background: #5c6664;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around; 
+      margin-bottom: 50px;
+    }
+    h1{
+      color: white;
+    }
+    h2{
+      color: white;
+    }
+    .bchile{
+      background: #00792D;
+
+    }
+    .titulo{
+    height: 100px;
+    width: 100%;
+    background: #5c6664;
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    img{
+      margin-inline-start: -19px;
+    }
+  .in{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right: 40px;
+  }
+    .caja{
+      height: 100px; 
+      width: 24%;
+      background: #5c6664;
+      margin-bottom: 20px;
+      display: inline-block;
+      text-align: center;
+      padding: 30px 30px;
+    }
+    .myButton {
+      box-shadow: 0px 6px 14px -7px #3e7327;
+      background:linear-gradient(to bottom, #007940 5%, #007940 100%);
+      background-color:#007940;
+      border-radius:31px;
+      border:4px solid #4b8f29;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:21px;
+      font-weight:bold;
+      padding:12px 56px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #5b8a3c;
+    }
+    .myButton:hover {
+      background:linear-gradient(to bottom, #007940 5%, #007940 100%);
+      background-color:#007940;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
+    .producto {
+      min-height: 200px; 
+      max-height: 500px; 
+      width: 49%;
+      background: #5c6664;
+      margin-bottom: 30px;
+      display: inline-block;
+      text-align: center;
+      /* padding: 50px 50px; */
+    }
+
+    .img{
+      width: 100%;
+      max-height: 500px; 
+      display: block;
+    }
+  
+    .footer {
+      text-align: center;
+      height: 100px;
+      width: 100%;
+      background: #5c6664;
+    }
+
+@media (max-width: 300px)
+{
+  .links-nav{
+    display: inline-block;
+    background: #929289;
+    color:rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+  .in{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-right: 40px;
+  }
+  nav{
+    background: #5c6664;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 50px;
+  }
+  .titulo{
+  height: 100px;
+  width: 100%;
+  background: #5c6664;
+  padding: 10px 10px;
+  text-align: center;
+  margin-bottom: 50px;
+  }
+
+  .producto {
+    min-height: 200px; 
+    max-height: 500px; 
+    width: 49%;
+    background: #5c6664;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: center;
+    /* padding: 50px 50px; */
+  }
+
+  .footer {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background: #5c6664;
+  }
+}

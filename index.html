@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chilemat Devoluciones</title>
+</head>
+<div class="img">
+  <img src="descarga.png" alt="">
+</div>
+<h1 class="ttitle">Devoluciones Centro de distribución Quillota</h1>
+<body class="bchile">
+  <form enctype="text/plain" target="_top" action="mailto:mfdiazgarrido@gmail.com?subject=Devolución%20a%20bodega" method="post"> 
+    <div class="select">
+      <select name="Nombre" id="format" required>
+        <option value="">Nombre de Conductor</option>
+        <option value=" Cristian Gomez">Cristian Gomez</option>
+        <option value=" Esteban Yañez">Esteban Yañez</option>
+        <option value=" Edison Mora">Edison Mora</option>
+        <option value=" Guillermo Medina">Guillermo Medina</option>
+        <option value=" Cristian Navia">Cristian Navia</option>
+        <option value=" Johan Perdomo">Johan Perdomo</option>
+        <option value=" Richard buitrago">Richard buitrago</option>
+        <option value=" Sebastián ortega">Sebastián ortega</option>
+        <option value=" Juan Carlos Molina">Juan Carlos Molina</option>
+        <option value=" Yorkman Medina">Yorkman Medina</option>
+        <option value=" LOCAL">LOCAL</option>
+      </select>
+    </div>
+    <br>
+    <div class="select">
+      <select name="Tipo" required>
+        <option value="">Selecciona el tipo de devolución</option>
+        <option value=" Producto no solicitado">Por producto no solicitado</option>
+        <option value=" Pedido duplicado">Por pedido duplicado</option>
+        <option value=" Calidad de producto">Por calidad de producto </option>
+        <option value=" Producto dannado">Por producto dañado</option>
+      </select>
+    </div>
+    <h2>Gu&iacute;a de despacho</h2>
+    <div class="contenedor">
+      <input name="Num del documento de despacho" type="text" class="in" required="" pattern="[0-9]+" placeholder="Ingresa el número de guía aquí" minlength=5></input>
+    </div>
+    <h2>Detalle de la devolución</h2>
+    <div class="contenedor">
+      <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in" required="" placeholder="Ingresa el detalle de la Devoluión"></textarea>
+    </div>
+    <br>
+    <button class="myButton">Enviar por Gmail</button>
+  </form>
+</body>
+</html>
