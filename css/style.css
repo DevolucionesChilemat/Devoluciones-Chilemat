@@ -27,7 +27,7 @@
       display: none;
    }
    .select {
-      position: relative;
+     /* position: relative;
       display: flex;
       width: 20em;
       height: 3em;
@@ -35,7 +35,19 @@
       background: #01793E;
       overflow: hidden;
       border-radius: .25em;
-      border-color: black;
+      border-color: black; */
+      background-color: #01793E;
+      border: thin solid black;
+      border-radius: 4px;
+      display: inline-block;
+      font: inherit;
+      line-height: 1.5em;
+      padding: 0.5em 3.5em 0.5em 1em;
+      display: flex;
+      width: 20em;
+      height: 3em;
+      position: relative;
+      line-height: 3;
    }
    .select::after {
       content: '\25BC';
