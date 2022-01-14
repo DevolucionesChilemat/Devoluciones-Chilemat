@@ -87,6 +87,10 @@
     img{
       margin-inline-start: -19px;
     }
+    .cm{
+      width: 25%;
+
+    }
   .in{
     width: 100%;
     background: rgb(255, 255, 255);
