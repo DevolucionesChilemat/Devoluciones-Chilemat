@@ -48,6 +48,7 @@
       height: 3em;
       position: relative;
       line-height: 3;
+      overflow: hidden;
    }
    .select::after {
       content: '\25BC';
