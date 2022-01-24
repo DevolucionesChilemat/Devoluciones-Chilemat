@@ -153,16 +153,9 @@
       width: 100%;
       background: #5c6664;
     }
- /*
+ 
 @media (max-width: 300px) 
 {
-   .links-nav{
-    display: inline-block;
-    background: #929289;
-    color:rgb(0, 0, 0);
-    padding: 10px 30px;
-    text-decoration: none;
-  }
   .in{
     width: 100%;
     background: rgb(255, 255, 255);
@@ -173,6 +166,14 @@
     font-size: 14px;
     color: rgb(0, 0, 0);
     margin-right: 40px;
+  }
+   /*
+   .links-nav{
+    display: inline-block;
+    background: #929289;
+    color:rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-decoration: none;
   }
   nav{
     background: #5c6664;
@@ -199,5 +200,5 @@
     display: inline-block;
     text-align: center;
      padding: 50px 50px; 
-  } 
-}
+  } */ 
+} 
