@@ -96,12 +96,11 @@
       width: 370px;
     }
     .in{
-    width: 100%;
+    width: 85%;
     background: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #1f53c5;
-    font-family: 'calibri';
     font-size: 14px;
     color: rgb(0, 0, 0);
     margin-right: 40px;
