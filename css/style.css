@@ -1,20 +1,13 @@
-*, *:before, *:after {
-
-      -webkit-box-sizing: border-box !important;
-      -moz-box-sizing: border-box !important;
-      -ms-box-sizing: border-box !important;
-      box-sizing: border-box !important;
-    }
-    select {
-      -webkit-appearance:none;
-      -moz-appearance:none;
-      -ms-appearance:none;
+  select {
+     /* -webkit-appearance:none; 
+      -moz-appearance:none;  
+      -ms-appearance:none; 
       appearance:none;
-      outline:0;
-      box-shadow:none;
+      background-image: none; 
+      box-shadow:none;*/
+      outline:0; 
       border:0!important;
       background: #007940;
-      background-image: none;
       flex: 1;
       padding: 0 .5em;
       color:#fff;
@@ -23,9 +16,10 @@
       font-family: 'Open Sans', sans-serif;
       border-color: black;
    }
-   select::-ms-expand {
-      display: none;
+   /* select::-ms-expand {
+    display: none;
    }
+ */
    .select {
      /* position: relative;
       display: flex;
@@ -86,7 +80,6 @@
     }
     .bchile{
       background: #00792D;
-
     }
     .titulo{
     height: 100px;
@@ -100,10 +93,9 @@
       margin-inline-start: -19px;
     }
     .cm{
-      width: 300px;
-
+      width: 370px;
     }
-  .in{
+    .in{
     width: 100%;
     background: rgb(255, 255, 255);
     padding: 10px;
@@ -114,15 +106,6 @@
     color: rgb(0, 0, 0);
     margin-right: 40px;
   }
-    .caja{
-      height: 100px; 
-      width: 24%;
-      background: #5c6664;
-      margin-bottom: 20px;
-      display: inline-block;
-      text-align: center;
-      padding: 30px 30px;
-    }
     .myButton {
       box-shadow: 0px 6px 14px -7px #3e7327;
       background:linear-gradient(to bottom, #007940 5%, #007940 100%);
@@ -147,7 +130,7 @@
       position:relative;
       top:1px;
     }
-    .producto {
+   /*  .producto {
       min-height: 200px; 
       max-height: 500px; 
       width: 49%;
@@ -155,8 +138,8 @@
       margin-bottom: 30px;
       display: inline-block;
       text-align: center;
-      /* padding: 50px 50px; */
-    }
+      padding: 50px 50px; 
+    } */
 
     .img{
       width: 100%;
@@ -170,10 +153,10 @@
       width: 100%;
       background: #5c6664;
     }
-
-@media (max-width: 300px)
+ /*
+@media (max-width: 300px) 
 {
-  .links-nav{
+   .links-nav{
     display: inline-block;
     background: #929289;
     color:rgb(0, 0, 0);
@@ -215,13 +198,6 @@
     margin-bottom: 30px;
     display: inline-block;
     text-align: center;
-    /* padding: 50px 50px; */
-  }
-
-  .footer {
-    text-align: center;
-    height: 100px;
-    width: 100%;
-    background: #5c6664;
-  }
+     padding: 50px 50px; 
+  } 
 }
