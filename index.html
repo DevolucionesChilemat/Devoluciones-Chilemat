@@ -37,25 +37,31 @@
         <option value=" Calidad de producto">Por calidad de producto </option>
         <option value=" Producto defectuoso">Por producto dañado</option>
       </select>
-    </div>  <h2>Nombre Cliente</h2>
-    <div class="contenedor">
-      <input name="Nombre de cliente" type="text" class="in" required="" placeholder="Ingresa nombre de cliente aquí" minlength=3></input>
+    </div> 
+
+
+    <h2>Nombre Cliente</h2>
+    <div class="contenedor" id="formulario_nombre">
+      <input name="Nombre de cliente" type="text" class="in" required="" placeholder="Ingresa nombre de cliente aquí" minlength=3>
+      <p class="input-error">Debe completar este campo</p>
     </div>
+
+    
     <h2>Gu&iacute;a de despacho</h2>
-    <div class="contenedor">
-      <input name="Num del documento de despacho" type="text" class="in" required="" pattern="[0-9]+" placeholder="Ingresa el número de guía aquí" minlength=5></input>
+    <div class="contenedor" id="formulario_dim">
+      <input name="Num del documento de despacho" type="text" class="in" required="" pattern="[0-9]+" placeholder="Ingresa el número de guía aquí" minlength=5>
+      <p class="input-error">Debe completar este campo</p>
     </div>
+
     <h2>Detalle de la devolución</h2>
-    <div class="contenedor">
+    <div class="contenedor" id="formulario_detalle">
       <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in" required="" placeholder="Ingresa el detalle de la devolución"></textarea>
+      <p class="input-error">Debe completar este campo</p>
     </div>
+
+    
     <button class="myButton" type="submit">Enviar por Gmail</button>
-    <div id="formulario_nombre">
-      <label for="nombre">Nombre de la obra</label>
-      <input type="text" class="form-control" id="nombreObra" name="nombreObra" placeholder="Ej: Atardecer en mi mente">
-      <p class="input-error">Debe completar el campo con el nombre de la obra</p>
-  </div>
   </form>
-  <script src="validarFormulario.js"></script>
+  <script src="validacion-publicacion.js"></script>
 </body>
 </html>

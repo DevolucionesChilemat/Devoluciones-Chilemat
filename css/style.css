@@ -153,6 +153,25 @@
       width: 100%;
       background: #5c6664;
     }
+    .input-error {
+      display: none;
+  }
+  
+  .input-error-activo {
+      display: block;
+      color: #CD1919;
+  }
+  
+  .error-envio{
+      display: none;
+  }
+  
+  .error-envio-activo{
+      background-color: #fa5353;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+  }
  
 @media (max-width: 300px) 
 {
