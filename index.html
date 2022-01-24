@@ -11,7 +11,7 @@
 </div>
 <h1 class="ttitle">Devoluciones Centro de distribución Quillota</h1>
 <body class="bchile">
-  <form enctype="text/plain" target="_top" action="mailto:DevolucionesChilemat@gmail.com?subject=Devolución%20a%20bodega" method="post"> 
+  <form id="formulario" enctype="text/plain" target="_top" action="mailto:DevolucionesChilemat@gmail.com?subject=Devolución%20a%20bodega" method="post"> 
     <div class="select">
       <select name="Nombre" id="format" required>
         <option value="">Nombre de Conductor</option>
@@ -49,7 +49,13 @@
     <div class="contenedor">
       <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in" required="" placeholder="Ingresa el detalle de la devolución"></textarea>
     </div>
-    <button class="myButton">Enviar por Gmail</button>
+    <button class="myButton" type="submit">Enviar por Gmail</button>
+    <div id="formulario_nombre">
+      <label for="nombre">Nombre de la obra</label>
+      <input type="text" class="form-control" id="nombreObra" name="nombreObra" placeholder="Ej: Atardecer en mi mente">
+      <p class="input-error">Debe completar el campo con el nombre de la obra</p>
+  </div>
   </form>
+  <script src="validarFormulario.js"></script>
 </body>
 </html>
