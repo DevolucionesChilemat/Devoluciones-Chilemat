@@ -13,7 +13,7 @@
 <body class="bchile">
   <form id="formulario" enctype="text/plain" target="_top" action="mailto:DevolucionesChilemat@gmail.com?subject=Devolución%20a%20bodega" method="post"> 
     <div class="select">
-      <select name="Nombre" id="format" required>
+      <select name="Nombre" id="nombreT" required>
         <option value="">Nombre de Conductor</option>
         <option value=" Cristian Gomez">Cristian Gomez</option>
         <option value=" Esteban Yañez">Esteban Yañez</option>
@@ -30,7 +30,7 @@
     </div>
     <br>
     <div class="select">
-      <select name="Tipo" required>
+      <select name="Tipo" id="tipoD" required>
         <option value="">Selecciona el tipo de devolución</option>
         <option value=" Producto no solicitado">Por producto no solicitado</option>
         <option value=" Pedido duplicado">Por pedido duplicado</option>
@@ -43,24 +43,24 @@
     <h2>Nombre Cliente</h2>
     <div class="contenedor" id="formulario_nombre">
       <input name="Nombre de cliente" type="text" class="in" required="" placeholder="Ingresa nombre de cliente aquí" minlength=3>
-      <p class="input-error">Debe completar este campo</p>
+      <p class="input-error">Debe ingresar el Nombre del Cliente</p>
     </div>
 
     
     <h2>Gu&iacute;a de despacho</h2>
     <div class="contenedor" id="formulario_dim">
       <input name="Num del documento de despacho" type="text" class="in" required="" pattern="[0-9]+" placeholder="Ingresa el número de guía aquí" minlength=5>
-      <p class="input-error">Debe completar este campo</p>
+      <p class="input-error">Debe ingresar el número de guía de despacho</p>
     </div>
 
     <h2>Detalle de la devolución</h2>
     <div class="contenedor" id="formulario_detalle">
       <textarea name="Detalle" id="Producto" cols="10" rows="3"  class="in" required="" placeholder="Ingresa el detalle de la devolución"></textarea>
-      <p class="input-error">Debe completar este campo</p>
+      <p class="input-error">Debe completar el detalle de la devolución</p>
     </div>
 
     
-    <button class="myButton" type="submit">Enviar por Gmail</button>
+    <button class="myButton" onclick="validar" type="submit">Enviar por Gmail</button>
   </form>
   <script src="validacion-publicacion.js"></script>
 </body>
