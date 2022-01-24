@@ -41,6 +41,26 @@ const validarCampo = (expresion, input, campo) => {
     }
 }
 
+
+function validarNombreT() {
+	var nombreT =document.getElementById('nombreT')
+    if (nombreT.value == 0 || nombreT.value == "" ) {
+        alert("Selecciona un tu nombre")
+    } else {
+        
+    }
+
+}
+function validarTipoD() {
+	var tipoD =document.getElementById('tipoD')
+    if (tipoD.value == 0 || tipoD.value == "" ) {
+        alert("Selecciona el tipo de devolución")
+    } else {
+        
+    }
+
+}
+
 inputs.forEach((input) => {
     input.addEventListener('keyup',validarFormulario);
     input.addEventListener('blur',validarFormulario);
