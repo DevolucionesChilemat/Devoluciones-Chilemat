@@ -13,7 +13,7 @@ var validaNombre = function(){
 
 var validarTelefono = function(){
     var tel = document.getElementById("formulario_despacho").value;
-    if(tel.length==5){
+    if(tel.length>5){
         return true;
     }else{
         return false;
