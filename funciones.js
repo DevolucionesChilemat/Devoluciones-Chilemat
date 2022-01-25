@@ -1,6 +1,19 @@
-
-/*5 FUNCIONES*/
-
+/*5 FUNCIONES
+function validarNombreT() {
+    var nombreT = document.getElementById('nombreT')
+    if (nombreT.value == 0 || nombreT.value == "") {
+        alert("Selecciona TU NOMBRE")
+    } else {
+    }
+}
+function validartipoD() {
+    var tipoD = document.getElementById('tipoD')
+    if (tipoD.value == 0 || tipoD.value == "") {
+        alert("Selecciona un tipo")
+    } else {
+    }
+}
+*/
 
 var validaNombre = function(){
     var nom = document.getElementById("formulario_nombre").value;
