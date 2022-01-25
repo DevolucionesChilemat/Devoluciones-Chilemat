@@ -29,9 +29,38 @@ var validarMensaje = function(){
     }
 }
 
+function validar(){
+    var nombreVariable=document.getElementById
+    ('nombreT');
+    if(nombreVariable.value==0 ||
+     nombreVariable.value == "")
+      {
+         nombreVariable.focus();
+      }
+    }
+    function validar2(){
+        var nombreVariable=document.getElementById
+        ('tipoD');
+        if(nombreVariable.value==0 ||
+         nombreVariable.value == "")
+          {
+             nombreVariable.focus();
+          }
+        }
+
 // validacion de funciones 
 
 var validarFunciones =function(){
+    if(validar()==true){
+    }else{
+        envio="SLECCIONA TU NOMBRE";
+        return envio;
+    }
+    if(validar2()==true){
+    }else{
+        envio="SLECCIONA TIPO DE DEVOLUCIÓN";
+        return envio;
+    }
     if(validaNombre()==true){
     }else{
         envio="El campo NOMBRE CLIENTE debe ser ingresado";
@@ -47,6 +76,7 @@ var validarFunciones =function(){
         envio="El campo DETALLE DE DEVOLUCIÓN debe contener como mínimo de información";
         return envio;
     }
+
     if(validaNombre()==true&&validarTelefono()==true&&validarCorreo()==true&&validarMensaje()==true){
         envio="FORMULARIO DE CONSULTA SE HA ENVIADO CON ÉXITO";
         return envio;
